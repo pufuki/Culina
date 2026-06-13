@@ -20,9 +20,11 @@ The application helps you find recipes based on the ingredients you have in your
    ```
 
 2. **Configure API Keys**:
-   The application requires API keys to communicate with the AI services. You must set these in your environment variables:
-   - `ANTHROPIC_API_KEY`: Used to fetch recipes from Chef Claude.
-   - `HF_ACCESS_TOKEN`: Used to fetch recipes from Mistral.
+   Create a `.env` file at the root of the project (you can copy `.env.example` as a template) and fill in your keys:
+   ```env
+   ANTHROPIC_API_KEY=your_anthropic_api_key_here
+   HF_ACCESS_TOKEN=your_hugging_face_token_here
+   ```
 
 3. **Start the Development Server**:
    Run the following command to start the app locally:
